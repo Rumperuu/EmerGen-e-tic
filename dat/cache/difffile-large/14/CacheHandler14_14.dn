@@ -1,0 +1,267 @@
+/*
+ *                        EmerGen(e)tic 0.8                        
+ *             Copyright © 2017 Ben Goldsworthy (rumperuu)        
+ *                                                                      
+ * A program to research the utility of genetic algorithms, applied to
+ * 'emergent' sytems.
+ *                                                                           
+ * This file is part of EmerGen(e)tic.                                         
+ *                                                                            
+ * IMPROVEMENT(S): License (probably GNU GPLv3 tbh) goes here.      
+ */
+
+/**
+ ** This program serves as the base for each mutated CacheHandler,
+ ** providing the functionality that is common to all of them.
+ **/
+
+ /**
+ **   @author  Ben Goldsworthy (rumperuu) <bgoldsworthy96 @ gmail.com>
+ **   @version 1.0
+ **/
+component provides cache.CacheHandler 
+          requires io.Output out, 
+                   data.IntUtil iu, 
+                   util.RandomInt ir, 
+                   time.Calendar ic, 
+                   time.DateUtil du, 
+                   io.File {
+                         
+	static CachedResponse cache[]
+	static int arraySize
+	static Mutex cacheLock
+
+   /**
+    **   Returns a requested item from the cache.
+    **
+    **   @param resource The request item filepath
+    **   @return The item from the cache
+    **/
+	CachedResponse CacheHandler:getCachedResponse(char filePath[]) {
+      // Converts the filepath to an array of bytes for the file.
+      File fd = new File(filePath, File.FILE_ACCESS_READ)
+      char resource[] = fd.read(fd.getSize())
+      fd.close()
+      
+      // Returns the item if it's in the cache.
+		mutex(cacheLock) {						
+			for (int i = 0; i < arraySize; i++) {
+				if (cache[i].resource == resource) {
+					cache[i].hits++
+					cache[i].lastUsed = ic.getTime()
+					return cache[i]
+				}
+			}
+		}		
+		return null
+	}
+	
+	/**
+	 **   Updates the cache if the requested item is not already present.
+	 **   If the cache is full, the method of determining the item to be 
+	 **   replaced is subject to genetic mutation.
+	 **
+	 **   @param ncr The new item to cache
+	 **/
+	void CacheHandler:updateCache(CachedResponse ncr) {
+		mutex(cacheLock) {	
+		    // If the item is already in the cache, do nothing.
+			for (int i = 0; i < arraySize; i++) {
+				if (cache[i].resource == ncr.resource) {
+					cache[i].response = ncr.response
+					cache[i].resourceAge = ncr.resourceAge
+
+					return
+				}
+			}
+			
+			// If the item is not, it must be added.
+			// As `ncr` was created on another component, its details must
+			// be copied to avoid a read-only exception.
+			CachedResponse newEntry = new CachedResponse()
+			newEntry.command = ncr.command
+			newEntry.resource = ncr.resource
+			newEntry.resourceAge = ncr.resourceAge
+			newEntry.mimeType = ncr.mimeType
+			newEntry.response = new byte[](ncr.response)
+			newEntry.contentSize = ncr.contentSize
+
+         // Initialises the cache if there isn't currently one.
+			if (cache == null) {
+				cache = new CachedResponse[CacheHandler.MAX_SIZE]()
+			}
+
+         // If the cache is full, determines which item to replace.
+			if (arraySize == CacheHandler.MAX_SIZE) {
+				int index
+            
+				// BEGIN
+				index = nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+				// END
+            
+				cache[index % arraySize] = newEntry
+				//out.println("$(debugMSG) replacing: $(iu.intToString(index))")
+			// Otherwise, appends the item to the end of the cache.
+			} else {
+				cache[arraySize] = newEntry
+				arraySize++
+			}
+		}
+	}
+
+    /**
+     **     Clears the cache completely.
+     **/
+	void CacheHandler:clearCache() {
+		mutex(cacheLock) {
+			cache = null
+		}
+	}
+	
+	/**************************************************************************
+	 * What follows are utility functions that a given chromosome of the
+	 * `updateCache()` method may or may not call upon.
+	 **************************************************************************/
+	
+	// This method returns the index of the nth most frequently-used item in 
+	// the cache.
+	int nthMostFrequentlyUsed(int n) {
+	   int hits[]
+	   for (int i = 0; i < arraySize; i++) hits[i] = 0
+	   
+      int i
+      int j
+	   mutex(cacheLock) {	
+			for (i = 0; i < arraySize; i++) {
+				for (j = 0; j < arraySize; j++) {
+				   if (cache[i].hits == hits[j]) break
+				   else if (hits[j] == 0) {
+				      hits[j] = cache[i].hits
+				      break
+               }
+				}
+			}
+		}		
+		
+      int k = 0
+      int nthHit = 0
+		for (i = 0; i < j; i++) {
+         if (hits[i] > nthHit) {
+            nthHit = hits[i]
+            k++
+         }
+         if (k == n) break
+      }
+		
+		int itemIndices[]
+		
+		mutex(cacheLock) {	
+		   j = 0					
+			for (i = 0; i < arraySize; i++) {
+			   if (cache[i].hits == nthHit) itemIndices[j++] = i
+			}
+		}	
+		
+		return resolve(itemIndices, "r")	
+	}
+	
+	// This method returns the index of the nth most recently-used item in 
+	// the cache.
+	int nthMostRecentlyUsed(int n) {
+	   DateTime useTimes[]
+      DateTime testTime = ic.getTime()
+	   for (int i = 0; i < arraySize; i++) useTimes[i] = testTime
+	   
+      int i
+      int j
+	   mutex(cacheLock) {						
+			for (i = 0; i < arraySize; i++) {
+				for (j = 0; j < arraySize; j++) {
+				   if (du.equal(cache[i].lastUsed, useTimes[j])) break
+				   else if (du.equal(useTimes[j], testTime)) {
+				      useTimes[j] = cache[i].lastUsed
+				      break
+               }
+				}
+			}
+		}		
+		
+		int k = 0
+      DateTime nthUseTime = ic.getTime()
+		for (i = 0; i < j; i++) {
+         if (du.after(useTimes[i], nthUseTime)) {
+            nthUseTime = useTimes[i]
+            k++
+         }
+         if (k == n) break
+      }
+		
+		int itemIndices[]
+		
+		mutex(cacheLock) {	
+         j = 0
+			for (i = 0; i < arraySize; i++) {
+			   if (du.equal(cache[i].lastUsed, nthUseTime)) itemIndices[j++] = i
+			}
+		}	
+		
+		return resolve(itemIndices, "r")	
+	}
+	
+	// This method returns a random index.
+	int random() {
+		DateTime dt = ic.getTime()
+		int msec = dt.millisecond
+		ir.setSeed(msec)
+		return ir.get(CacheHandler.MAX_SIZE)
+	}
+	
+	// This method resolves a multiple return in one of the methods above, 
+   // as per the flag sent along with the list of indices.
+	// 'n' returns the newest, 'o' the oldest and 'r' a random index.
+	int resolve(int index[], char flag) {
+		DateTime dt = null
+		
+		if (flag == "n") {
+         int newestItem = 0
+          
+         int i = index.arrayLength-1
+		   for (int j = 0; j < index.arrayLength; j++) {
+			   if (dt == null) {
+               dt = cache[index[i]].timeAdded
+               newestItem = index[i]
+			   } else {
+				   if (du.before(dt, cache[index[i]].timeAdded)) {
+                  dt = cache[index[i]].timeAdded
+                  newestItem = index[i]
+				   }
+			   }
+            i--
+		   }
+
+		   return newestItem
+		} else if (flag == "o") {
+		   int oldestItem = 0
+
+		   for (int i = 0; i < index.arrayLength; i++) {
+			   if (dt == null) {
+               dt = cache[index[i]].timeAdded
+               oldestItem = index[i]
+			   } else {
+				   if (du.before(cache[index[i]].timeAdded, dt)) {
+                  dt = cache[index[i]].timeAdded
+					   oldestItem = index[i]
+				   }
+			   }
+		   }
+		   return oldestItem
+		} else if (flag == "r") {
+		   dt = ic.getTime()
+		   int msec = dt.millisecond
+		   ir.setSeed(msec)
+		   return ir.get(index.arrayLength)
+	   } else {
+		   return 0
+		}
+	}
+}

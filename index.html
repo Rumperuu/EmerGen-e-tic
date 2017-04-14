@@ -1,0 +1,68 @@
+<h1>SCC.300 Final Year Project</h1>
+
+<h3>Contact</h3>
+
+<p>Ben Goldsworthy (33576556) - <a href="mailto:me@bengoldsworthy.uk">Email</a></p>
+
+<h3>Introduction</h3>
+
+<p>This is the landing page for my final year project: &lsquo;EmerGen(e)tic: Exploring the use of genetic algorithms in distributed emergent systems&rsquo;.</p>
+
+<h3>Abstract</h3>
+
+<p>&ldquo;Adaptive and emergent systems exist to attempt to answer the deficiencies inherent to distributed systems, and the necessarily finite ability of any programmer to predict all possible eventualities in which his software may one day find itself. This paper argues that these systems fail to go far enough, and then proposes a further development&mdash;genetic systems&mdash;which utilises evolutionary programming to extend the versatility of a given system massively, if not infinitely. This paper proceeds to detail the EmerGen(e)tic framework for rapidly testing genetic algorithm modules within emergent systems, as well as an example module pertaining to the cache updating behaviour of a web server. This paper concludes by proposing further avenues of potentially-fruitful research based upon these programs and its findings.&rdquo;</p>
+
+<h3>Files</h3>
+
+<ul>
+   <li><a href="report/final-report.pdf">Report</a></li>
+   <li><b>Sources</b>
+      <ul>
+         <li><b>EmerGen(e)tic</b>
+            <ul>
+               <li><a href="src/emergenetic/README.md">Readme</a></li>
+               <li><a href="src/emergenetic/LICENSE.md">License</a></li>
+               <li><a href="src/emergenetic/emergenetic.dn">`emergenetic.dn`</a></li>
+               <li><b>HelloWorld module</b>
+                  <ul>
+                     <li><a href="src/helloworld/README.md">Readme</a></li>
+                     <li><a href="src/helloworld/LICENSE.md">License</a></li>
+                     <li><a href="src/helloworld/project/helloworld/mutator.py">`mutator.py`</a></li>
+                     <li><a href="src/helloworld/project/helloworld/setup.sh">`setup.sh`</a></li>
+                     <li><b>HelloWorld Run Results</b>
+                        <ul>
+                           <li><a href="dat/helloworld/output0.txt">With probailities set to 0 %</a></li>
+                           <li><a href="dat/helloworld/output50.txt">With probailities set to 50 %</a></li>
+                           <li><a href="dat/helloworld/output100.txt">With probailities set to 100 %</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li><b>CachingPolicy module</b>
+                  <ul>
+                     <li><a href="src/cachingpolicy/README.md">Readme</a></li>
+                     <li><a href="src/cachingpolicy/LICENSE.md">License</a></li>
+                     <li><a href="src/cachingpolicy/emergenetic.dn">`emergenetic.dn`</a> (with implemented `runCandidates()` method)</li>
+                     <li><a href="src/cachingpolicy/project/cachingpolicy/mutator.py">`mutator.py`</a></li>
+                     <li><a href="src/cachingpolicy/project/cachingpolicy/config.conf">`config.conf`</a></li>
+                     <li><a href="src/cachingpolicy/project/cachingpolicy/setup.sh">`setup.sh`</a></li>
+                     <li><a href="src/cachingpolicy/cachebackup/CacheHandlerBase.dn">`CacheHandler*` base</a></li>
+                     <li><a href="dat/runTests.sh">Example test runs Bashscript</a></li>
+                     <li><b>CachingPolicy Run Results</b>
+                        <ul>
+                           <li><a href="dat/output (normal).txt">Example `output.txt`</a></li>
+                           <li><a href="dat/output (verbose).txt">Example `output.txt` (with 'verbose' flag enabled)</a></li>
+                           <li><a href="dat/archives/difffile.bz2">Example archived test run (`difffile`)</a></li>
+                           <li><a href="dat/cache/difffile-large/12/CacheHandler12_8.dn">Example `CacheHandler` chromosome (`difffile-large`, `CacheHandler12_8.dn`)</a></li>
+                           <li><a href="dat/scripts/difffile-images.script">Example `.script` file</a></li>
+                           <li>Results featured in report: `<a href="dat/results/results_difffile-large.ods">difffile-large</a>` and `<a href="dat/results/results_samefile-images.ods">samefile-images</a>`</li>
+                           <li><a href="dat/cache/difffile-large/17/chromosomes.txt">Gen. 18 chromsomes</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul>

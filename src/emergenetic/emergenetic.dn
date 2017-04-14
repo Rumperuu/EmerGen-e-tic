@@ -1,0 +1,167 @@
+/*
+ *                        EmerGen(e)tic 1.0                       
+ *             Copyright © 2017 Ben Goldsworthy (rumperuu)        
+ *                                                                      
+ * EmerGen(e)tic is a framework for researching the use of genetic
+ * algorithms in emergent systems.
+ *                                                                           
+ * This file is part of EmerGen(e)tic.                                         
+ *                                                                             
+ * EmerGen(e)tic is free software: you can redistribute it and/or modify        
+ * it under the terms of the GNU General Public License as published by       
+ * the Free Software Foundation, either version 3 of the License, or          
+ * (at your option) any later version.                                        
+ *                                                                            
+ * EmerGen(e)tic is distributed in the hope that it will be useful,             
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of             
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the              
+ * GNU General Public License for more details.                               
+ *                                                                            
+ * You should have received a copy of the GNU General Public License          
+ * along with EmerGen(e)tic.  If not, see <http://www.gnu.org/licenses/>.                             
+ */
+
+/**
+ ** This program runs the tests that are passed to it as command-line
+ ** arguments. It contains methods that can be easily overwritten for
+ ** creating new tests.
+ **/
+
+/**
+ **   @author  Ben Goldsworthy (rumperuu) <me@bengoldsworthy.uk>
+ **   @version 1.0
+ **/
+component provides App requires os.Run run, 
+                                   io.Output out, 
+                                   composition.Loader unloader,
+                                   composition.RecursiveLoader loader, 
+                                   time.Calendar calendar, 
+                                   time.DateUtil dateUtil, 
+                                   data.StringUtil stringUtil, 
+                                   data.IntUtil intUtil,
+                                   io.File,
+                                   io.TextFile {
+   
+   // Required arguments.
+   int argMod = 0
+   int argScript = argMod + 1
+   int argGens = argScript + 1
+   int argCans = argGens + 1
+   int minArgs = argCans + 1
+   
+   // Optional arguments.
+   int argVerb = minArgs
+   int maxArgs = minArgs + 1
+   
+   /**
+    **   Main method. Runs the generations and mutation. This method 
+    **   should not need to be modified.
+    **   
+    **   @param params The arguments the program is run with (e.g. 
+    **   the number of generations to run, and the population size per
+    **   generation, etc.)
+    **   @return The program exit code.
+    **/
+   int App:main(AppParam params[]) {
+      // Checks that there are enough passed array arguments, and that
+      // they are valid.
+      if ((params.arrayLength >= minArgs) && (params.arrayLength <= maxArgs)) {
+         if (stringUtil.isNumeric(params[argGens].string) && stringUtil.isNumeric(params[argCans].string)) {
+            // Assigns all of the command-line arguments to variables.
+            int generations = intUtil.intFromString(params[argGens].string)
+            int candidates = intUtil.intFromString(params[argCans].string)
+            char module[] = params[argMod].string
+            char script[] = params[argScript].string
+            int verbose = 0
+            if (params.arrayLength == maxArgs) {
+               if (params[argVerb].string == "verbose") {
+                  verbose = 1
+               }
+            }
+            
+            // Performs any initial setup.
+            RunStatus setupResult = run.execute("./project/$(module)/setup.sh $(intUtil.intToString(generations)) $(script)")
+            // Iterates through the generations, creating them and then
+            // testing each of their candidates.
+            for (int i = 0; i < generations; i++) {           
+               // Runs the per-generation mutator.
+               RunStatus result = run.execute("python3 ./project/$(module)/mutator.py $(intUtil.intToString(i)) $(intUtil.intToString(candidates)) $(intUtil.intToString(verbose)) $(script)")
+               // Runs the generation.
+               runGeneration(i, candidates, script)
+            }
+            
+            return 0
+         // If the 'generations' and 'candidates' arguments are non-numeric...
+         } else {
+            out.println("Invalid runtime arguments: Arguments <generation> and <candidates> must be integers.")
+            return 1
+         }
+      // If an invalid number of arguments are passed to the program...
+      } else {
+         out.println("Invalid runtime arguments: Program should be run as:\n\t`dana emergenetic <module> <script> <generations> <candidates>`\n\nProgram may also be run with optional `verbose` flag as final argument:\n\tdana emergenetic <module> <script> <generations> <candidates> verbose`")
+         return 1
+      }
+	}
+   
+   /**
+    **   Runs a generation of candidates. This method should not need to
+    **   be modified.
+    **   
+    **   @param generation The generation of the candidate.
+    **   @param candidates The total number of candidates.
+    **   @param script The name of the script file being used.
+    **/
+   void runGeneration(int generation, int candidates, char script[]) { 
+      File results
+      
+      out.println("")
+      // Runs through each candidate.
+      for (int j = 0; j < candidates; j++) runCandidate(generation, j, script)
+      
+      // For the end of the generation's candidates, appends a newline to
+      // the CSV file.
+      results = new File("./results/$(script)/results.csv", File.FILE_ACCESS_WRITE)
+      results.setPos(results.getSize())
+      results.write("\r\n")
+      results.close()
+   }
+    
+   /**
+    **   Runs a candidate through a test. Modify this method for changing
+    **   what is being tested.
+    **   
+    **   @param generation The generation of the candidate.
+    **   @param candidate The number of the candidate.
+    **   @param script The name of the script file being used.
+    **/
+   void runCandidate(int generation, int candidate, char script[]) {
+      // This method intentionally left blank.
+   }
+   
+   /**
+    **   Prints the results of a test run. This method should not need to
+    **   be modified.
+    **   
+    **   @param generation The generation of the candidate.
+    **   @param candidate The number of the candidate.
+    **   @param metric The value of the metric by which candidates are
+    **      being rated (as a string).
+    **   @param unit The unit of the value (e.g. ms, cm, etc.).
+    **   @param script The name of the script file being used.
+    **/
+   void printResults(int generation, int candidate, char metric[], char unit[], char script[]) {
+      File results
+      
+      out.println("Result for configuration $(intUtil.intToString(generation))x$(intUtil.intToString(candidate)): $(metric) $(unit)")
+      
+      results = new File("./results/$(script)/results$(intUtil.intToString(generation)).txt", File.FILE_ACCESS_WRITE)
+      results.setPos(results.getSize())
+      results.write("$(intUtil.intToString(generation))_$(intUtil.intToString(candidate)):$(metric)$(unit)\r\n")
+      results.close()
+      
+      results = new File("./results/$(script)/results.csv", File.FILE_ACCESS_WRITE)
+      results.setPos(results.getSize())
+      results.write("$(metric),")
+      results.close()
+   }
+}

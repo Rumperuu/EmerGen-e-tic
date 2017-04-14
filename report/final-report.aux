@@ -1,0 +1,164 @@
+\relax 
+\citation{distsys}
+\citation{reliable}
+\citation{machinecentric}
+\citation{antenna}
+\citation{genprog}
+\citation{ants}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{4}}
+\newlabel{sec:introduction}{{1}{4}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic genetic algorithm}}{5}}
+\newlabel{alg1}{{1}{5}}
+\citation{bugcost}
+\citation{1000}
+\citation{cni}
+\citation{unix}
+\citation{geometry}
+\citation{email}
+\citation{rfc}
+\citation{distsys}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{7}}
+\newlabel{sec:background}{{2}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Assumptions}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Distributed and Adaptive Systems}{7}}
+\citation{dana}
+\citation{dana}
+\citation{machinecentric}
+\citation{machinecentric}
+\citation{losingcontrol}
+\citation{rex}
+\citation{fusion}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Emergent Systems}{8}}
+\citation{floyd}
+\citation{genprog}
+\citation{security}
+\citation{antenna}
+\citation{ants}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}`Genetic Systems'}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Design}{10}}
+\newlabel{sec:design}{{3}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}EmerGen(e)tic}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}The Web Server}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}How a web server works}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Added extras}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}A tale of two web servers}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Caching}{12}}
+\newlabel{sec:caching}{{3.3}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}The `Cache Policy' Genetic Algorithm}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Implementation: EmerGen(e)tic}{14}}
+\newlabel{sec:implementation}{{4}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Folder Structure}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\lstinline |emergenetic.dn|}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}\lstinline |App:main()|}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}\lstinline |runGeneration()|}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}\lstinline |runCandidate()|}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}\lstinline |printResults()|}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Implementation: \lstinline |cachingpolicy|}{15}}
+\newlabel{sec:cachingpolicyimpl}{{5}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Folder Structure}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Genetic Algorithm search space}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\lstinline |CacheHandlerBase.dn|}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}\lstinline |CacheHandler:getGetCachedResponse()|}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}\lstinline |CacheHandler:updateCache()|}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}\lstinline |CacheHandler:clearCache()|}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}\lstinline |nthMostFrequentlyUsed()|, \lstinline |nthMostRecentlyUsed()| \& \lstinline |random()|}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.5}\lstinline |resolve()|}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}\lstinline |emergenetic.dn|}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}\lstinline |cachingpolicy/mutator.py|}{16}}
+\newlabel{sec:python}{{5.5}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}\lstinline |getSubLists()|}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}\lstinline |crossover()|}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3}\lstinline |mutate()|}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.4}\lstinline |parse()| \& \lstinline |compile()|}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5}\lstinline |createInitialPop()|}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.6}\lstinline |readChromosomeFromFile()| \& \lstinline |writeChromosomeToFile()|}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.7}\lstinline |hasSubTrees()|}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.8}\lstinline |main()|}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}\lstinline |cachingpolicy/config.conf|}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}The System in Operation}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Creating a Module}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Files}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Implementation}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Creating Scripts}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Running EmerGen(e)tic}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Background Tests}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Testing \& Evaluation}{21}}
+\newlabel{sec:testing}{{7}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Testing EmerGen(e)tic}{21}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/helloworld/output50.txt}{21}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/helloworld/output50.txt}{21}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/helloworld/output0.txt}{21}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/helloworld/output0.txt}{22}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/helloworld/output100.txt}{22}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/helloworld/output100.txt}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Testing \lstinline |cachingpolicy|}{23}}
+\newlabel{sec:testingcache}{{7.2}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces }}{23}}
+\newlabel{fig:difffile-large}{{1}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces }}{23}}
+\newlabel{fig:difffile-large-wo}{{2}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces }}{23}}
+\newlabel{fig:samefile-images}{{3}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces }}{23}}
+\newlabel{fig:samefile-images-wo}{{4}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Evaluation}{24}}
+\newlabel{sec:eval}{{7.3}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Future Development}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.1}Completing the original goal of finding the optimal conditions for the genetic algorithm}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2}Designing more modules}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.3}A more `Danatically'-designed EmerGen(e)tic}{25}}
+\citation{meta}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.4}Issues within the present \lstinline |cachingpolicy| module}{26}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.5}Putting human developers further out of work (through meta-learning)}{26}}
+\bibstyle{IEEEtran}
+\bibdata{final-report}
+\bibcite{distsys}{1}
+\bibcite{reliable}{2}
+\bibcite{machinecentric}{3}
+\bibcite{antenna}{4}
+\bibcite{genprog}{5}
+\bibcite{ants}{6}
+\bibcite{bugcost}{7}
+\bibcite{1000}{8}
+\bibcite{cni}{9}
+\bibcite{unix}{10}
+\bibcite{geometry}{11}
+\bibcite{email}{12}
+\bibcite{rfc}{13}
+\bibcite{dana}{14}
+\bibcite{losingcontrol}{15}
+\bibcite{rex}{16}
+\bibcite{fusion}{17}
+\bibcite{floyd}{18}
+\bibcite{security}{19}
+\bibcite{meta}{20}
+\@writefile{toc}{\contentsline {section}{References}{27}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: \lstinline |emergenetic.dn|}{28}}
+\newlabel{appendix:emergen}{{A}{28}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/emergenetic/emergenetic.dn}{28}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  B: \lstinline |helloworld/mutator.py|}{32}}
+\newlabel{appendix:helloworld}{{B}{32}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/helloworld/project/helloworld/mutator.py}{32}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  C: \lstinline |cachingpolicy|}{34}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}\lstinline |CacheHandlerBase.dn|}{34}}
+\newlabel{appendix:base}{{C.1}{34}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/cachingpolicy/cachebackup/CacheHandlerBase.dn}{34}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}\lstinline |mutator.py|}{39}}
+\newlabel{appendix:genetic}{{C.2}{39}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/cachingpolicy/project/cachingpolicy/mutator.py}{39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}\lstinline |emergenetic.dn|'s \lstinline |runCandidates()| method}{44}}
+\newlabel{appendix:runcand}{{C.3}{44}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/cachingpolicy/emergenetic.dn}{44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.4}\lstinline |setup.sh|}{45}}
+\newlabel{appendix:setup}{{C.4}{45}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/cachingpolicy/project/cachingpolicy/setup.sh}{45}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.5}\lstinline |config.conf|}{45}}
+\newlabel{appendix:settings}{{C.5}{45}}
+\@writefile{lol}{\contentsline {lstlisting}{../src/cachingpolicy/project/cachingpolicy/config.conf}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.6}Gen. 18 chromosomes}{46}}
+\newlabel{appendix:chromosomes}{{C.6}{46}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/cache/difffile\textendash large/17/chromosomes.txt}{46}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  D: \lstinline |runTests.sh|}{47}}
+\newlabel{appendix:bash}{{D}{47}}
+\@writefile{lol}{\contentsline {lstlisting}{../dat/runTests.sh}{47}}

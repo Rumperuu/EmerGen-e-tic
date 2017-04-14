@@ -1,0 +1,1027 @@
+Result for configuration 0x0: 21 ms
+Result for configuration 0x1: 21 ms
+Result for configuration 0x2: 21 ms
+Result for configuration 0x3: 21 ms
+Result for configuration 0x4: 21 ms
+Result for configuration 0x5: 21 ms
+Result for configuration 0x6: 21 ms
+Result for configuration 0x7: 20 ms
+Result for configuration 0x8: 21 ms
+Result for configuration 0x9: 21 ms
+Result for configuration 0x10: 21 ms
+Result for configuration 0x11: 21 ms
+Result for configuration 0x12: 21 ms
+Result for configuration 0x13: 20 ms
+Result for configuration 0x14: 21 ms
+Result for configuration 0x15: 21 ms
+Result for configuration 0x16: 21 ms
+Result for configuration 0x17: 21 ms
+Result for configuration 0x18: 20 ms
+Result for configuration 0x19: 21 ms
+Result for configuration 0x20: 20 ms
+Result for configuration 0x21: 20 ms
+Result for configuration 0x22: 21 ms
+Result for configuration 0x23: 21 ms
+Result for configuration 0x24: 21 ms
+Result for configuration 0x25: 20 ms
+Result for configuration 0x26: 21 ms
+Result for configuration 0x27: 20 ms
+Result for configuration 0x28: 20 ms
+Result for configuration 0x29: 21 ms
+Result for configuration 0x30: 21 ms
+Result for configuration 0x31: 21 ms
+Result for configuration 0x32: 21 ms
+Result for configuration 0x33: 21 ms
+Result for configuration 0x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 0_3 copied to 1_3
+	Result: 0_5 copied to 1_5
+	Result: 0_10 copied to 1_10
+	Result: 0_13 copied to 1_13
+
+
+Mutating 0_6->1_6:
+	Mutating: 0
+		Result: 0/13
+	Mutating: 0/13
+		Result: 0+13
+	Mutating: 0+13
+		Result: 0+18
+0_6->1_6 mutation finish.
+
+Mutating 0_7->1_7:
+	Mutating: 0
+		Result: 0*12
+	Mutating: 0*12
+		Result: 0*12
+	Mutating: 0*12
+		Result: 0*nthMostRecentlyUsed(0)
+0_7->1_7 mutation finish.
+
+Mutating 0_19->1_19:
+	Mutating: 0
+		Result: 0
+0_19->1_19 mutation finish.
+
+Mutating 0_21->1_21:
+	Mutating: 0
+		Result: 0*17
+	Mutating: 0*17
+		Result: 0-17
+	Mutating: 0-17
+		Result: 0-nthMostFrequentlyUsed(0)
+0_21->1_21 mutation finish.
+
+Mutating 0_25->1_25:
+	Mutating: 0
+		Result: 0
+0_25->1_25 mutation finish.
+
+Mutating 0_27->1_27:
+	Mutating: 0
+		Result: 0
+0_27->1_27 mutation finish.
+
+Mutating 0_28->1_28:
+	Mutating: 0
+		Result: 0
+0_28->1_28 mutation finish.
+
+
+Result for configuration 1x0: 21 ms
+Result for configuration 1x1: 20 ms
+Result for configuration 1x2: 22 ms
+Result for configuration 1x3: 22 ms
+Result for configuration 1x4: 21 ms
+Result for configuration 1x5: 21 ms
+Result for configuration 1x6: 21 ms
+Result for configuration 1x7: 21 ms
+Result for configuration 1x8: 21 ms
+Result for configuration 1x9: 21 ms
+Result for configuration 1x10: 20 ms
+Result for configuration 1x11: 21 ms
+Result for configuration 1x12: 21 ms
+Result for configuration 1x13: 21 ms
+Result for configuration 1x14: 20 ms
+Result for configuration 1x15: 21 ms
+Result for configuration 1x16: 21 ms
+Result for configuration 1x17: 21 ms
+Result for configuration 1x18: 21 ms
+Result for configuration 1x19: 21 ms
+Result for configuration 1x20: 21 ms
+Result for configuration 1x21: 21 ms
+Result for configuration 1x22: 21 ms
+Result for configuration 1x23: 22 ms
+Result for configuration 1x24: 21 ms
+Result for configuration 1x25: 21 ms
+Result for configuration 1x26: 21 ms
+Result for configuration 1x27: 21 ms
+Result for configuration 1x28: 21 ms
+Result for configuration 1x29: 20 ms
+Result for configuration 1x30: 20 ms
+Result for configuration 1x31: 21 ms
+Result for configuration 1x32: 20 ms
+Result for configuration 1x33: 21 ms
+Result for configuration 1x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 1_6 copied to 2_6
+	Result: 1_11 copied to 2_11
+	Result: 1_20 copied to 2_20
+	Result: 1_34 copied to 2_34
+
+
+Mutating 1_1->2_1:
+	Mutating: 0
+		Result: 0
+1_1->2_1 mutation finish.
+
+Mutating 1_14->2_14:
+	Mutating: 0
+		Result: 0*13
+	Mutating: 0*13
+		Result: 0*13
+	Mutating: 0*13
+		Result: 0*19
+1_14->2_14 mutation finish.
+
+Mutating 1_15->2_15:
+	Mutating: 0
+		Result: 0
+1_15->2_15 mutation finish.
+
+Mutating 1_18->2_18:
+	Mutating: 0
+		Result: 0*16
+	Mutating: 0*16
+		Result: 0/16
+	Mutating: 0/16
+		Result: 0/3
+1_18->2_18 mutation finish.
+
+Mutating 1_21->2_21:
+	Mutating: 0-nthMostFrequentlyUsed(0)
+		Result: 5-nthMostFrequentlyUsed(0)
+	Mutating: 5-nthMostFrequentlyUsed(0)
+		Result: 5-nthMostFrequentlyUsed(0)
+	Mutating: 5-nthMostFrequentlyUsed(0)
+		Result: 5-nthMostFrequentlyUsed(0)
+	Mutating: 5-nthMostFrequentlyUsed(0)
+		Result: 5-nthMostFrequentlyUsed(0)
+1_21->2_21 mutation finish.
+
+Mutating 1_23->2_23:
+	Mutating: 0
+		Result: 0+11
+	Mutating: 0+11
+		Result: 0-11
+	Mutating: 0-11
+		Result: 0-nthMostFrequentlyUsed(0)
+1_23->2_23 mutation finish.
+
+Mutating 1_25->2_25:
+	Mutating: 0
+		Result: 0/3
+	Mutating: 0/3
+		Result: 0/3
+	Mutating: 0/3
+		Result: 0/nthMostRecentlyUsed(0)
+1_25->2_25 mutation finish.
+
+Mutating 1_27->2_27:
+	Mutating: 0
+		Result: 0*9
+	Mutating: 0*9
+		Result: 0/9
+	Mutating: 0/9
+		Result: 0/3
+1_27->2_27 mutation finish.
+
+
+Result for configuration 2x0: 21 ms
+Result for configuration 2x1: 21 ms
+Result for configuration 2x2: 20 ms
+Result for configuration 2x3: 21 ms
+Result for configuration 2x4: 20 ms
+Result for configuration 2x5: 21 ms
+Result for configuration 2x6: 20 ms
+Result for configuration 2x7: 22 ms
+Result for configuration 2x8: 22 ms
+Result for configuration 2x9: 21 ms
+Result for configuration 2x10: 21 ms
+Result for configuration 2x11: 22 ms
+Result for configuration 2x12: 21 ms
+Result for configuration 2x13: 21 ms
+Result for configuration 2x14: 21 ms
+Result for configuration 2x15: 21 ms
+Result for configuration 2x16: 21 ms
+Result for configuration 2x17: 21 ms
+Result for configuration 2x18: 20 ms
+Result for configuration 2x19: 21 ms
+Result for configuration 2x20: 21 ms
+Result for configuration 2x21: 20 ms
+Result for configuration 2x22: 21 ms
+Result for configuration 2x23: 21 ms
+Result for configuration 2x24: 21 ms
+Result for configuration 2x25: 21 ms
+Result for configuration 2x26: 21 ms
+Result for configuration 2x27: 21 ms
+Result for configuration 2x28: 21 ms
+Result for configuration 2x29: 21 ms
+Result for configuration 2x30: 21 ms
+Result for configuration 2x31: 20 ms
+Result for configuration 2x32: 21 ms
+Result for configuration 2x33: 21 ms
+Result for configuration 2x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 2_4 copied to 3_4
+	Result: 2_22 copied to 3_22
+	Result: 2_23 copied to 3_23
+	Result: 2_27 copied to 3_27
+
+
+Mutating 2_6->3_6:
+	Mutating: 0
+		Result: 0+1
+	Mutating: 0+1
+		Result: 0+1
+	Mutating: 0+1
+		Result: 0+random()
+2_6->3_6 mutation finish.
+
+Mutating 2_12->3_12:
+	Mutating: 0*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+2_12->3_12 mutation finish.
+
+Mutating 2_16->3_16:
+	Mutating: 0*19
+		Result: nthMostRecentlyUsed(0)*19
+	Mutating: nthMostRecentlyUsed(0)*19
+		Result: nthMostRecentlyUsed(0)-19
+	Mutating: nthMostRecentlyUsed(0)-19
+		Result: nthMostRecentlyUsed(0)-9
+2_16->3_16 mutation finish.
+
+Mutating 2_19->3_19:
+	Mutating: 0
+		Result: 0
+2_19->3_19 mutation finish.
+
+Mutating 2_20->3_20:
+	Mutating: 0/3
+		Result: nthMostFrequentlyUsed(0)/3
+	Mutating: nthMostFrequentlyUsed(0)/3
+		Result: nthMostFrequentlyUsed(0)+3
+	Mutating: nthMostFrequentlyUsed(0)+3
+		Result: nthMostFrequentlyUsed(0)+2
+2_20->3_20 mutation finish.
+
+Mutating 2_21->3_21:
+	Mutating: 0
+		Result: 0+19
+	Mutating: 0+19
+		Result: 0*19
+	Mutating: 0*19
+		Result: 0*nthMostRecentlyUsed(0)
+2_21->3_21 mutation finish.
+
+Mutating 2_31->3_31:
+	Mutating: 0
+		Result: 0/2
+	Mutating: 0/2
+		Result: 0+2
+	Mutating: 0+2
+		Result: 0+nthMostRecentlyUsed(0)
+2_31->3_31 mutation finish.
+
+Mutating 2_32->3_32:
+	Mutating: 0
+		Result: 0
+2_32->3_32 mutation finish.
+
+Mutating 2_33->3_33:
+	Mutating: 0
+		Result: 0
+2_33->3_33 mutation finish.
+
+
+Result for configuration 3x0: 22 ms
+Result for configuration 3x1: 21 ms
+Result for configuration 3x2: 21 ms
+Result for configuration 3x3: 20 ms
+Result for configuration 3x4: 22 ms
+Result for configuration 3x5: 21 ms
+Result for configuration 3x6: 21 ms
+Result for configuration 3x7: 21 ms
+Result for configuration 3x8: 20 ms
+Result for configuration 3x9: 21 ms
+Result for configuration 3x10: 21 ms
+Result for configuration 3x11: 20 ms
+Result for configuration 3x12: 21 ms
+Result for configuration 3x13: 20 ms
+Result for configuration 3x14: 20 ms
+Result for configuration 3x15: 21 ms
+Result for configuration 3x16: 20 ms
+Result for configuration 3x17: 21 ms
+Result for configuration 3x18: 20 ms
+Result for configuration 3x19: 20 ms
+Result for configuration 3x20: 21 ms
+Result for configuration 3x21: 20 ms
+Result for configuration 3x22: 21 ms
+Result for configuration 3x23: 21 ms
+Result for configuration 3x24: 21 ms
+Result for configuration 3x25: 21 ms
+Result for configuration 3x26: 21 ms
+Result for configuration 3x27: 21 ms
+Result for configuration 3x28: 21 ms
+Result for configuration 3x29: 21 ms
+Result for configuration 3x30: 21 ms
+Result for configuration 3x31: 20 ms
+Result for configuration 3x32: 20 ms
+Result for configuration 3x33: 21 ms
+Result for configuration 3x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 3_7 copied to 4_7
+	Result: 3_13 copied to 4_13
+	Result: 3_19 copied to 4_19
+	Result: 3_22 copied to 4_22
+
+
+Mutating 3_15->4_15:
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+3_15->4_15 mutation finish.
+
+Mutating 3_18->4_18:
+	Mutating: 0
+		Result: 0+12
+	Mutating: 0+12
+		Result: 0+12
+	Mutating: 0+12
+		Result: 0+nthMostRecentlyUsed(0)
+3_18->4_18 mutation finish.
+
+Mutating 3_26->4_26:
+	Mutating: 0
+		Result: 0/8
+	Mutating: 0/8
+		Result: 0/8
+	Mutating: 0/8
+		Result: 0/nthMostRecentlyUsed(0)
+3_26->4_26 mutation finish.
+
+Mutating 3_32->4_32:
+	Mutating: 0
+		Result: 0-3
+	Mutating: 0-3
+		Result: 0-3
+	Mutating: 0-3
+		Result: 0-nthMostRecentlyUsed(0)
+3_32->4_32 mutation finish.
+
+
+Result for configuration 4x0: 21 ms
+Result for configuration 4x1: 21 ms
+Result for configuration 4x2: 21 ms
+Result for configuration 4x3: 21 ms
+Result for configuration 4x4: 21 ms
+Result for configuration 4x5: 20 ms
+Result for configuration 4x6: 21 ms
+Result for configuration 4x7: 21 ms
+Result for configuration 4x8: 21 ms
+Result for configuration 4x9: 21 ms
+Result for configuration 4x10: 21 ms
+Result for configuration 4x11: 21 ms
+Result for configuration 4x12: 21 ms
+Result for configuration 4x13: 20 ms
+Result for configuration 4x14: 21 ms
+Result for configuration 4x15: 20 ms
+Result for configuration 4x16: 20 ms
+Result for configuration 4x17: 21 ms
+Result for configuration 4x18: 21 ms
+Result for configuration 4x19: 20 ms
+Result for configuration 4x20: 21 ms
+Result for configuration 4x21: 21 ms
+Result for configuration 4x22: 20 ms
+Result for configuration 4x23: 21 ms
+Result for configuration 4x24: 21 ms
+Result for configuration 4x25: 20 ms
+Result for configuration 4x26: 21 ms
+Result for configuration 4x27: 21 ms
+Result for configuration 4x28: 20 ms
+Result for configuration 4x29: 21 ms
+Result for configuration 4x30: 21 ms
+Result for configuration 4x31: 20 ms
+Result for configuration 4x32: 21 ms
+Result for configuration 4x33: 21 ms
+Result for configuration 4x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 4_13 copied to 5_13
+	Result: 4_21 copied to 5_21
+	Result: 4_22 copied to 5_22
+	Result: 4_29 copied to 5_29
+
+
+Mutating 4_2->5_2:
+	Mutating: nthMostRecentlyUsed(0)-9
+		Result: nthMostRecentlyUsed(0)-9
+	Mutating: nthMostRecentlyUsed(0)-9
+		Result: nthMostRecentlyUsed(0)-9
+	Mutating: nthMostRecentlyUsed(0)-9
+		Result: nthMostRecentlyUsed(0)-9
+	Mutating: nthMostRecentlyUsed(0)-9
+		Result: nthMostRecentlyUsed(0)-nthMostRecentlyUsed(0)
+4_2->5_2 mutation finish.
+
+Mutating 4_8->5_8:
+	Mutating: 0
+		Result: 0/11
+	Mutating: 0/11
+		Result: 0/11
+	Mutating: 0/11
+		Result: 0/nthMostRecentlyUsed(0)
+4_8->5_8 mutation finish.
+
+Mutating 4_9->5_9:
+	Mutating: 0
+		Result: 0
+4_9->5_9 mutation finish.
+
+Mutating 4_12->5_12:
+	Mutating: 0+random()
+		Result: nthMostFrequentlyUsed(0)+random()
+	Mutating: nthMostFrequentlyUsed(0)+random()
+		Result: nthMostFrequentlyUsed(0)/random()
+	Mutating: nthMostFrequentlyUsed(0)/random()
+		Result: nthMostFrequentlyUsed(0)/random()
+4_12->5_12 mutation finish.
+
+Mutating 4_20->5_20:
+	Mutating: 0+nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)+nthMostRecentlyUsed(0)
+	Mutating: nthMostFrequentlyUsed(0)+nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostFrequentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostFrequentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)*nthMostRecentlyUsed(0)
+4_20->5_20 mutation finish.
+
+Mutating 4_34->5_34:
+	Mutating: 0
+		Result: 0/5
+	Mutating: 0/5
+		Result: 0+5
+	Mutating: 0+5
+		Result: 0+nthMostRecentlyUsed(0)
+4_34->5_34 mutation finish.
+
+
+Result for configuration 5x0: 21 ms
+Result for configuration 5x1: 22 ms
+Result for configuration 5x2: 21 ms
+Result for configuration 5x3: 22 ms
+Result for configuration 5x4: 21 ms
+Result for configuration 5x5: 20 ms
+Result for configuration 5x6: 20 ms
+Result for configuration 5x7: 21 ms
+Result for configuration 5x8: 20 ms
+Result for configuration 5x9: 20 ms
+Result for configuration 5x10: 21 ms
+Result for configuration 5x11: 22 ms
+Result for configuration 5x12: 21 ms
+Result for configuration 5x13: 21 ms
+Result for configuration 5x14: 21 ms
+Result for configuration 5x15: 20 ms
+Result for configuration 5x16: 21 ms
+Result for configuration 5x17: 20 ms
+Result for configuration 5x18: 21 ms
+Result for configuration 5x19: 21 ms
+Result for configuration 5x20: 21 ms
+Result for configuration 5x21: 21 ms
+Result for configuration 5x22: 21 ms
+Result for configuration 5x23: 21 ms
+Result for configuration 5x24: 21 ms
+Result for configuration 5x25: 21 ms
+Result for configuration 5x26: 20 ms
+Result for configuration 5x27: 20 ms
+Result for configuration 5x28: 21 ms
+Result for configuration 5x29: 21 ms
+Result for configuration 5x30: 20 ms
+Result for configuration 5x31: 20 ms
+Result for configuration 5x32: 21 ms
+Result for configuration 5x33: 21 ms
+Result for configuration 5x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 5_7 copied to 6_7
+	Result: 5_11 copied to 6_11
+	Result: 5_16 copied to 6_16
+	Result: 5_18 copied to 6_18
+
+
+Mutating 5_0->6_0:
+	Mutating: 0
+		Result: 0/9
+	Mutating: 0/9
+		Result: 0/9
+	Mutating: 0/9
+		Result: 0/nthMostRecentlyUsed(0)
+5_0->6_0 mutation finish.
+
+Mutating 5_8->6_8:
+	Mutating: 0
+		Result: 0
+5_8->6_8 mutation finish.
+
+Mutating 5_30->6_30:
+	Mutating: 0
+		Result: 0-16
+	Mutating: 0-16
+		Result: 0+16
+	Mutating: 0+16
+		Result: 0+nthMostFrequentlyUsed(0)
+5_30->6_30 mutation finish.
+
+
+Result for configuration 6x0: 21 ms
+Result for configuration 6x1: 21 ms
+Result for configuration 6x2: 21 ms
+Result for configuration 6x3: 21 ms
+Result for configuration 6x4: 21 ms
+Result for configuration 6x5: 21 ms
+Result for configuration 6x6: 21 ms
+Result for configuration 6x7: 20 ms
+Result for configuration 6x8: 21 ms
+Result for configuration 6x9: 20 ms
+Result for configuration 6x10: 21 ms
+Result for configuration 6x11: 21 ms
+Result for configuration 6x12: 21 ms
+Result for configuration 6x13: 20 ms
+Result for configuration 6x14: 21 ms
+Result for configuration 6x15: 21 ms
+Result for configuration 6x16: 21 ms
+Result for configuration 6x17: 20 ms
+Result for configuration 6x18: 21 ms
+Result for configuration 6x19: 21 ms
+Result for configuration 6x20: 21 ms
+Result for configuration 6x21: 21 ms
+Result for configuration 6x22: 21 ms
+Result for configuration 6x23: 21 ms
+Result for configuration 6x24: 21 ms
+Result for configuration 6x25: 21 ms
+Result for configuration 6x26: 21 ms
+Result for configuration 6x27: 20 ms
+Result for configuration 6x28: 21 ms
+Result for configuration 6x29: 20 ms
+Result for configuration 6x30: 20 ms
+Result for configuration 6x31: 21 ms
+Result for configuration 6x32: 20 ms
+Result for configuration 6x33: 20 ms
+Result for configuration 6x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 6_9 copied to 7_9
+	Result: 6_21 copied to 7_21
+	Result: 6_23 copied to 7_23
+	Result: 6_27 copied to 7_27
+
+
+Mutating 6_20->7_20:
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)*nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+6_20->7_20 mutation finish.
+
+Mutating 6_22->7_22:
+	Mutating: 0
+		Result: 0/8
+	Mutating: 0/8
+		Result: 0/8
+	Mutating: 0/8
+		Result: 0/nthMostFrequentlyUsed(0)
+6_22->7_22 mutation finish.
+
+Mutating 6_26->7_26:
+	Mutating: 0-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+6_26->7_26 mutation finish.
+
+
+Result for configuration 7x0: 21 ms
+Result for configuration 7x1: 21 ms
+Result for configuration 7x2: 21 ms
+Result for configuration 7x3: 21 ms
+Result for configuration 7x4: 21 ms
+Result for configuration 7x5: 22 ms
+Result for configuration 7x6: 21 ms
+Result for configuration 7x7: 21 ms
+Result for configuration 7x8: 21 ms
+Result for configuration 7x9: 21 ms
+Result for configuration 7x10: 21 ms
+Result for configuration 7x11: 20 ms
+Result for configuration 7x12: 21 ms
+Result for configuration 7x13: 21 ms
+Result for configuration 7x14: 21 ms
+Result for configuration 7x15: 21 ms
+Result for configuration 7x16: 21 ms
+Result for configuration 7x17: 21 ms
+Result for configuration 7x18: 21 ms
+Result for configuration 7x19: 20 ms
+Result for configuration 7x20: 21 ms
+Result for configuration 7x21: 21 ms
+Result for configuration 7x22: 20 ms
+Result for configuration 7x23: 21 ms
+Result for configuration 7x24: 21 ms
+Result for configuration 7x25: 21 ms
+Result for configuration 7x26: 21 ms
+Result for configuration 7x27: 20 ms
+Result for configuration 7x28: 21 ms
+Result for configuration 7x29: 20 ms
+Result for configuration 7x30: 21 ms
+Result for configuration 7x31: 21 ms
+Result for configuration 7x32: 21 ms
+Result for configuration 7x33: 21 ms
+Result for configuration 7x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 7_9 copied to 8_9
+	Result: 7_10 copied to 8_10
+	Result: 7_13 copied to 8_13
+	Result: 7_15 copied to 8_15
+
+
+Mutating 7_1->8_1:
+	Mutating: 0
+		Result: 0
+7_1->8_1 mutation finish.
+
+Mutating 7_6->8_6:
+	Mutating: nthMostFrequentlyUsed(0)/random()
+		Result: nthMostFrequentlyUsed(0)/random()
+	Mutating: nthMostFrequentlyUsed(0)/random()
+		Result: nthMostFrequentlyUsed(0)/random()
+	Mutating: nthMostFrequentlyUsed(0)/random()
+		Result: nthMostFrequentlyUsed(0)/random()
+	Mutating: nthMostFrequentlyUsed(0)/random()
+		Result: nthMostFrequentlyUsed(0)/random()
+7_6->8_6 mutation finish.
+
+Mutating 7_12->8_12:
+	Mutating: 0
+		Result: 0
+7_12->8_12 mutation finish.
+
+Mutating 7_27->8_27:
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)-nthMostFrequentlyUsed(0)
+7_27->8_27 mutation finish.
+
+Mutating 7_28->8_28:
+	Mutating: 0/nthMostRecentlyUsed(0)
+		Result: 9/nthMostRecentlyUsed(0)
+	Mutating: 9/nthMostRecentlyUsed(0)
+		Result: 9/nthMostRecentlyUsed(0)
+	Mutating: 9/nthMostRecentlyUsed(0)
+		Result: 9/nthMostRecentlyUsed(0)
+	Mutating: 9/nthMostRecentlyUsed(0)
+		Result: 9/nthMostRecentlyUsed(0)
+7_28->8_28 mutation finish.
+
+
+Result for configuration 8x0: 21 ms
+Result for configuration 8x1: 21 ms
+Result for configuration 8x2: 21 ms
+Result for configuration 8x3: 21 ms
+Result for configuration 8x4: 21 ms
+Result for configuration 8x5: 21 ms
+Result for configuration 8x6: 21 ms
+Result for configuration 8x7: 22 ms
+Result for configuration 8x8: 21 ms
+Result for configuration 8x9: 20 ms
+Result for configuration 8x10: 21 ms
+Result for configuration 8x11: 21 ms
+Result for configuration 8x12: 21 ms
+Result for configuration 8x13: 21 ms
+Result for configuration 8x14: 22 ms
+Result for configuration 8x15: 21 ms
+Result for configuration 8x16: 21 ms
+Result for configuration 8x17: 20 ms
+Result for configuration 8x18: 21 ms
+Result for configuration 8x19: 21 ms
+Result for configuration 8x20: 21 ms
+Result for configuration 8x21: 21 ms
+Result for configuration 8x22: 21 ms
+Result for configuration 8x23: 20 ms
+Result for configuration 8x24: 21 ms
+Result for configuration 8x25: 21 ms
+Result for configuration 8x26: 21 ms
+Result for configuration 8x27: 21 ms
+Result for configuration 8x28: 21 ms
+Result for configuration 8x29: 20 ms
+Result for configuration 8x30: 21 ms
+Result for configuration 8x31: 21 ms
+Result for configuration 8x32: 21 ms
+Result for configuration 8x33: 21 ms
+Result for configuration 8x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 8_16 copied to 9_16
+	Result: 8_23 copied to 9_23
+	Result: 8_9 copied to 9_9
+	Result: 8_17 copied to 9_17
+
+
+Mutating 8_14->9_14:
+	Mutating: 0
+		Result: 0-5
+	Mutating: 0-5
+		Result: 0-5
+	Mutating: 0-5
+		Result: 0-8
+8_14->9_14 mutation finish.
+
+Mutating 8_15->9_15:
+	Mutating: 0
+		Result: 0/9
+	Mutating: 0/9
+		Result: 0/9
+	Mutating: 0/9
+		Result: 0/6
+8_15->9_15 mutation finish.
+
+Mutating 8_31->9_31:
+	Mutating: 0+nthMostRecentlyUsed(0)
+		Result: 3+nthMostRecentlyUsed(0)
+	Mutating: 3+nthMostRecentlyUsed(0)
+		Result: 3/nthMostRecentlyUsed(0)
+	Mutating: 3/nthMostRecentlyUsed(0)
+		Result: 3/nthMostRecentlyUsed(0)
+	Mutating: 3/nthMostRecentlyUsed(0)
+		Result: 3/nthMostRecentlyUsed(0)
+8_31->9_31 mutation finish.
+
+Mutating 8_34->9_34:
+	Mutating: 0+nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)+nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)+nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+8_34->9_34 mutation finish.
+
+
+Result for configuration 9x0: 21 ms
+Result for configuration 9x1: 21 ms
+Result for configuration 9x2: 21 ms
+Result for configuration 9x3: 21 ms
+Result for configuration 9x4: 21 ms
+Result for configuration 9x5: 21 ms
+Result for configuration 9x6: 22 ms
+Result for configuration 9x7: 22 ms
+Result for configuration 9x8: 21 ms
+Result for configuration 9x9: 21 ms
+Result for configuration 9x10: 21 ms
+Result for configuration 9x11: 21 ms
+Result for configuration 9x12: 21 ms
+Result for configuration 9x13: 20 ms
+Result for configuration 9x14: 20 ms
+Result for configuration 9x15: 21 ms
+Result for configuration 9x16: 20 ms
+Result for configuration 9x17: 21 ms
+Result for configuration 9x18: 20 ms
+Result for configuration 9x19: 21 ms
+Result for configuration 9x20: 21 ms
+Result for configuration 9x21: 20 ms
+Result for configuration 9x22: 21 ms
+Result for configuration 9x23: 21 ms
+Result for configuration 9x24: 21 ms
+Result for configuration 9x25: 21 ms
+Result for configuration 9x26: 20 ms
+Result for configuration 9x27: 21 ms
+Result for configuration 9x28: 21 ms
+Result for configuration 9x29: 21 ms
+Result for configuration 9x30: 20 ms
+Result for configuration 9x31: 20 ms
+Result for configuration 9x32: 21 ms
+Result for configuration 9x33: 21 ms
+Result for configuration 9x34: 20 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 9_19 copied to 10_19
+	Result: 9_26 copied to 10_26
+	Result: 9_13 copied to 10_13
+	Result: 9_14 copied to 10_14
+
+
+Mutating 9_4->10_4:
+	Mutating: 0
+		Result: 0/14
+	Mutating: 0/14
+		Result: 0/14
+	Mutating: 0/14
+		Result: 0/nthMostRecentlyUsed(0)
+9_4->10_4 mutation finish.
+
+Mutating 9_12->10_12:
+	Mutating: 0
+		Result: 0
+9_12->10_12 mutation finish.
+
+Mutating 9_31->10_31:
+	Mutating: 3/nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostFrequentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostFrequentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostFrequentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostFrequentlyUsed(0)/nthMostRecentlyUsed(0)
+9_31->10_31 mutation finish.
+
+Mutating 9_34->10_34:
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+9_34->10_34 mutation finish.
+
+
+Result for configuration 10x0: 21 ms
+Result for configuration 10x1: 21 ms
+Result for configuration 10x2: 21 ms
+Result for configuration 10x3: 21 ms
+Result for configuration 10x4: 21 ms
+Result for configuration 10x5: 21 ms
+Result for configuration 10x6: 21 ms
+Result for configuration 10x7: 21 ms
+Result for configuration 10x8: 21 ms
+Result for configuration 10x9: 21 ms
+Result for configuration 10x10: 20 ms
+Result for configuration 10x11: 21 ms
+Result for configuration 10x12: 21 ms
+Result for configuration 10x13: 21 ms
+Result for configuration 10x14: 21 ms
+Result for configuration 10x15: 20 ms
+Result for configuration 10x16: 21 ms
+Result for configuration 10x17: 21 ms
+Result for configuration 10x18: 21 ms
+Result for configuration 10x19: 21 ms
+Result for configuration 10x20: 20 ms
+Result for configuration 10x21: 21 ms
+Result for configuration 10x22: 21 ms
+Result for configuration 10x23: 21 ms
+Result for configuration 10x24: 21 ms
+Result for configuration 10x25: 20 ms
+Result for configuration 10x26: 20 ms
+Result for configuration 10x27: 21 ms
+Result for configuration 10x28: 21 ms
+Result for configuration 10x29: 21 ms
+Result for configuration 10x30: 21 ms
+Result for configuration 10x31: 21 ms
+Result for configuration 10x32: 21 ms
+Result for configuration 10x33: 20 ms
+Result for configuration 10x34: 21 ms
+
+Applying rank selection to top 10% from prev. generation...
+	Result: 10_11 copied to 11_11
+	Result: 10_19 copied to 11_19
+	Result: 10_24 copied to 11_24
+	Result: 10_25 copied to 11_25
+
+
+Mutating 10_8->11_8:
+	Mutating: 0/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+10_8->11_8 mutation finish.
+
+Mutating 10_20->11_20:
+	Mutating: 0/6
+		Result: nthMostRecentlyUsed(0)/6
+	Mutating: nthMostRecentlyUsed(0)/6
+		Result: nthMostRecentlyUsed(0)+6
+	Mutating: nthMostRecentlyUsed(0)+6
+		Result: nthMostRecentlyUsed(0)+nthMostFrequentlyUsed(0)
+10_20->11_20 mutation finish.
+
+Mutating 10_26->11_26:
+	Mutating: nthMostFrequentlyUsed(0)+2
+		Result: nthMostFrequentlyUsed(0)+2
+	Mutating: nthMostFrequentlyUsed(0)+2
+		Result: nthMostFrequentlyUsed(0)+2
+	Mutating: nthMostFrequentlyUsed(0)+2
+		Result: nthMostFrequentlyUsed(0)+2
+	Mutating: nthMostFrequentlyUsed(0)+2
+		Result: nthMostFrequentlyUsed(0)+17
+10_26->11_26 mutation finish.
+
+Mutating 10_28->11_28:
+	Mutating: 9/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+	Mutating: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+		Result: nthMostRecentlyUsed(0)/nthMostRecentlyUsed(0)
+10_28->11_28 mutation finish.
+
+Mutating 10_33->11_33:
+	Mutating: 0
+		Result: 0-18
+	Mutating: 0-18
+		Result: 0-18
+	Mutating: 0-18
+		Result: 0-nthMostRecentlyUsed(0)
+10_33->11_33 mutation finish.
+
+
+Result for configuration 11x0: 22 ms
+Result for configuration 11x1: 21 ms
+Result for configuration 11x2: 21 ms
+Result for configuration 11x3: 21 ms
+Result for configuration 11x4: 21 ms
+Result for configuration 11x5: 21 ms
+Result for configuration 11x6: 21 ms
+Result for configuration 11x7: 21 ms
+Result for configuration 11x8: 21 ms
+Result for configuration 11x9: 21 ms
+Result for configuration 11x10: 21 ms
+Result for configuration 11x11: 21 ms
+Result for configuration 11x12: 21 ms
+Result for configuration 11x13: 21 ms
+Result for configuration 11x14: 21 ms
+Result for configuration 11x15: 21 ms
+Result for configuration 11x16: 20 ms
+Result for configuration 11x17: 20 ms
+Result for configuration 11x18: 21 ms
+Result for configuration 11x19: 20 ms
+Result for configuration 11x20: 20 ms
+Result for configuration 11x21: 21 ms
+Result for configuration 11x22: 21 ms
+Result for configuration 11x23: 21 ms
+Result for configuration 11x24: 21 ms
+Result for configuration 11x25: 20 ms
+Result for configuration 11x26: 21 ms
+Result for configuration 11x27: 21 ms
+Result for configuration 11x28: 21 ms
+Result for configuration 11x29: 21 ms
+Result for configuration 11x30: 21 ms
+Result for configuration 11x31: 20 ms
+Result for configuration 11x32: 20 ms
+Result for configuration 11x33: 20 ms
+Result for configuration 11x34: 21 ms
