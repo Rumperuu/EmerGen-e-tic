@@ -19,7 +19,7 @@ along with CachingPolicy.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Contact
 
-Email: me@bengoldsworthy.uk
+Email: me+emergenetic@bengoldsworthy.net
 
 ## Description
 
